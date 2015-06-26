@@ -20,6 +20,8 @@ firebaseObj.child("Questions/QProjectTeam/QPT1").on("value", function(snapshot) 
   alert(snapshot.val());  // Alerts "San Francisco"
  // $scope.proj.DevNo=snapshot.val();
    //alert($scope.proj.DevNo);
+   $scope=snapshot.val();
+   console.log($scope);   
 });
    
    
@@ -78,4 +80,6 @@ firebaseObj.child("Questions/QProjectTeam/QPT1").on("value", function(snapshot) 
                 console.log('Authentication failure');
             });
   }
-}]);
+  
+
+  }]);

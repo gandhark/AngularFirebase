@@ -56,12 +56,12 @@
 	  
 	  
 	   <form class="form-signin" role="form">
-        <input ng-model="proj.DevNo" type="text" class="form-control" placeholder="DevNo" required="" >
+        {{proj.DevNo}}<input type="text" class="form-control" placeholder="DevNo" required="" value="">
         <input ng-model="proj.TestNo"  type="text" class="form-control" placeholder="TestNo" required="">
 		
 				
-		   <input ng-model="proj.PM" ng-bind="user.PM" type="text" class="form-control" placeholder="PM" required=""  value={{user.PM}}>
-        <input ng-model="proj.TL" type="text" class="form-control" placeholder="TL" required="">
+		   <input   type="text" class="form-control" placeholder="PM" required=""  value=>
+        <input  type="text" class="form-control" placeholder="TL" required="">
 		
 			
 		
