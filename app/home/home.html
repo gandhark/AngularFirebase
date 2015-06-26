@@ -19,13 +19,72 @@
       </div>
       <form class="form-signin" role="form">
         <input ng-model="user.email" type="email" class="form-control" placeholder="Email address" required="" autofocus="">
-        <input ng-model="user.password" type="password" class="form-control" placeholder="Password" required="">
+        <input ng-model="user.password"  type="password" class="form-control" placeholder="Password" required="">
+		
+		
+		
+		
+		
+		   <input ng-model="user.PM" ng-bind="user.PM" type="text" class="form-control" placeholder="PM name" required="" autofocus="" value={{user.PM}}>
+        <input ng-model="user.TL" type="text" class="form-control" placeholder="TL name" required="">
+		
+		
+		
+		
+		
+		
+		
+		
         <label class="checkbox">
           <a href="#"> Sign Up</>
         </label>
         <button type="button" ng-click="SignIn($event)" class="btn btn-lg btn-primary btn-block">SignIn</button>
       </form>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	   <form class="form-signin" role="form">
+        <input ng-model="proj.DevNo" type="text" class="form-control" placeholder="DevNo" required="" autofocus="">
+        <input ng-model="proj.TestNo"  type="text" class="form-control" placeholder="TestNo" required="">
+		
+				
+		   <input ng-model="proj.PM" ng-bind="user.PM" type="text" class="form-control" placeholder="PM name" required="" autofocus="" value={{user.PM}}>
+        <input ng-model="proj.TL" type="text" class="form-control" placeholder="TL name" required="">
+		
+			
+		
+      
+        <button type="button" ng-click="SignIn($event)" class="btn btn-lg btn-primary btn-block">SignIn</button>
+      </form>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
 
+	  <p>{{user.password}}</p>
+	    <p>{{user.email}}</p>
+		 <p>{{user.PM}}</p>
     </div>
 
   
